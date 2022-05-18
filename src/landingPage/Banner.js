@@ -156,7 +156,7 @@ export default function Banner({
                         </div>
                         <div className="banner-top text-center">
                             <h1>Welcome to Alora</h1>
-                            <p>You can use this app to create Alora nodes, <span className="yellow">view, claim and
+                            <p>You can use this app to create Alora Kingdoms, <span className="yellow">view, claim and
                                 compound rewards.</span></p>
                         </div>
                         <div className="hexagone-wrapper">

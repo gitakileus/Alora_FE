@@ -233,7 +233,7 @@ export default function CreateNode({ userId, setReload, networkId, nodesData, lo
                 progress: undefined,
             });
         } else if (noOfNodes < 1) {
-            toast.warn('Please enter the number of nodes', {
+            toast.warn('Please enter the number of Kingdoms', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -320,7 +320,7 @@ export default function CreateNode({ userId, setReload, networkId, nodesData, lo
                 progress: undefined,
             });
         } else if (noOfNodes < 1) {
-            toast.warn('Please enter the number of nodes', {
+            toast.warn('Please enter the number of Kingdoms', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -330,7 +330,7 @@ export default function CreateNode({ userId, setReload, networkId, nodesData, lo
                 progress: undefined,
             });
         } else if (noOfNodes > getUserTierBalance(tire)) {
-            toast.warn('Do not have enough number of nodes to compound!', {
+            toast.warn('Do not have enough number of Kingdoms to compound!', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -394,7 +394,7 @@ export default function CreateNode({ userId, setReload, networkId, nodesData, lo
                 progress: undefined,
             });
         } else if (noOfNodes < 1) {
-            toast.warn('Please enter the number of nodes', {
+            toast.warn('Please enter the number of Kingdoms', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -476,7 +476,7 @@ export default function CreateNode({ userId, setReload, networkId, nodesData, lo
 
     const handelBronzeToSilver = async () => {
         if (getUserTierBalance(0) < upgradeNoOfNodes * 5) {
-            toast.error('Not have enough no of Bronze node', {
+            toast.error('Not have enough no of Bronze Kingdom', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -529,7 +529,7 @@ export default function CreateNode({ userId, setReload, networkId, nodesData, lo
 
     const handelBronzeToGold = async () => {
         if (getUserTierBalance(0) < upgradeNoOfNodes * 10) {
-            toast.error('Not have enough no of Bronze node', {
+            toast.error('Not have enough no of Bronze Kingdom', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -582,7 +582,7 @@ export default function CreateNode({ userId, setReload, networkId, nodesData, lo
 
     const handelSilverToGold = async () => {
         if (getUserTierBalance(1) < upgradeNoOfNodes * 2) {
-            toast.error('Not have enough no of Silver node', {
+            toast.error('Not have enough no of Silver Kingdom', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -645,7 +645,7 @@ export default function CreateNode({ userId, setReload, networkId, nodesData, lo
                 progress: undefined,
             });
         } else if (noOfNodes < 1) {
-            toast.warn('Please enter the number of nodes', {
+            toast.warn('Please enter the number of Kingdoms', {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -995,7 +995,7 @@ export default function CreateNode({ userId, setReload, networkId, nodesData, lo
                                         <Row>
                                             <Col lg="4">
                                                 <div className="nodes-input">
-                                                    <input type="text" placeholder="Number of Nodes" onChange={(e) => handleUpgradeNoOfNodes(e)} />
+                                                    <input type="text" placeholder="Number of Kingdoms" onChange={(e) => handleUpgradeNoOfNodes(e)} />
                                                 </div>
                                             </Col>
                                             <Col lg="8">
