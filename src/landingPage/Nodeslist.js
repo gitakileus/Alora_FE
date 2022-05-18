@@ -8,7 +8,7 @@ export default function CreateNode() {
         <section className="nodes-list">
             <Container className="custom-container">
                 <div className="table-heading">
-                    <h2>Nodes</h2>
+                    <h2>Kingdoms</h2>
                     <div className="btn-list">
                         <button className="btn btn-brown">All</button>
                         <button className="btn btn-brown">Basic</button>

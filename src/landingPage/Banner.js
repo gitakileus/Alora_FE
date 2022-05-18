@@ -169,7 +169,7 @@ export default function Banner({
                                 <div className="list">
                                     <ul>
                                         <li>
-                                            <span className="label">My Nodes: </span>
+                                            <span className="label">My Kingdoms: </span>
                                             <span className="value">{nodesData ?
                                                 parseInt(nodesData[5]) + parseInt(nodesData[6]) + parseInt(nodesData[7])
                                                 : 0} / 130</span>
@@ -205,7 +205,7 @@ export default function Banner({
                                 <div className="list">
                                     <ul>
                                         <li>
-                                            <span className="label">Total Nodes: </span>
+                                            <span className="label">Total Kingdoms: </span>
                                             <span className="value"> {nodesData ? nodesData[0] : 0}</span>
                                         </li>
                                         <li>

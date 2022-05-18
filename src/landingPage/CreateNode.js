@@ -802,9 +802,9 @@ export default function CreateNode({ userId, setReload, networkId, nodesData, lo
                             <div className="rectangle-mb">
                                 <div className="text-center">
                                     <div className="node-rectanle">
-                                        <h3 className="yellow">Create a Node</h3>
+                                        <h3 className="yellow">Create A Kingdom</h3>
                                     </div>
-                                    <p>Choose between the three tiers of nodes below</p>
+                                    <p>Choose between the three tiers of Kingdoms below</p>
                                 </div>
                                 <div className="tiers-list">
                                     <Row>
@@ -821,7 +821,7 @@ export default function CreateNode({ userId, setReload, networkId, nodesData, lo
                                                             </div>
                                                             <div className="content">
                                                                 <h4>{capitalize(item[0])}</h4>
-                                                                <p>{Web3.utils.fromWei(item[1], "ether")} Alora per Node</p>
+                                                                <p>{Web3.utils.fromWei(item[1], "ether")} Alora per Kingdom</p>
                                                                 <p>Earn {Web3.utils.fromWei(item[2], "ether")} Alora per Day</p>
                                                             </div>
                                                             <span className="tick fa fa-check"></span>
@@ -839,7 +839,7 @@ export default function CreateNode({ userId, setReload, networkId, nodesData, lo
                                 <div className="nodes-input">
                                     <input
                                         type="text"
-                                        placeholder="Number of Nodes"
+                                        placeholder="Number of Kingdoms"
                                         onChange={(e) => updateNoOfNodes(e)}
                                     // disabled={tire<0?true:false}
                                     />
@@ -861,20 +861,20 @@ export default function CreateNode({ userId, setReload, networkId, nodesData, lo
                                         onClick={() => handelCreateNode()}
                                         disabled={userId && userAllownce > 0 ? false : true}
                                     >
-                                        Create Node
+                                        Create Kingdom
                                     </button>
                                     <button
                                         className={`btn btn-brown ${userId && userAllownce > 0 ? "active" : ''}`}
                                         disabled={userId && userAllownce > 0 ? false : true}
                                         onClick={() => handelCompondNode()}
                                     >
-                                        Compound Nodes
+                                        Compound Kingdoms
                                     </button>
                                     <button
                                         className={`btn btn-brown ${noOfNodes <= getUserTierBalance(tire) && activeTransfer && userId ? "active" : ''}`}
                                         disabled={noOfNodes <= getUserTierBalance(tire) && activeTransfer && userId ? false : true}
                                         onClick={() => (handleShowTranfer())}
-                                    >Transfer Node</button>
+                                    >Transfer Kingdom</button>
                                     <br />
                                     {/* Admin Part for creating nodes for user */}
                                     {userId === owner &&
@@ -884,7 +884,7 @@ export default function CreateNode({ userId, setReload, networkId, nodesData, lo
                                                 onClick={() => (handelShowCreateNode())}
                                                 disabled={userId ? false : true}
                                             >
-                                                Create Nodes for user
+                                                Create Kingdoms for user
                                             </button>
 
                                             <button
@@ -966,7 +966,7 @@ export default function CreateNode({ userId, setReload, networkId, nodesData, lo
                                                 <th>Bronze</th>
                                                 <th>Silver</th>
                                                 <th>Gold</th>
-                                                <th>Total Nodes</th>
+                                                <th>Total Kingdoms</th>
                                                 <th>Reward</th>
                                             </tr>
                                         </thead>
@@ -983,14 +983,14 @@ export default function CreateNode({ userId, setReload, networkId, nodesData, lo
 
                                     </Table>}
                                     <div className="upgrade-node">
-                                        <h4>Upgrade Nodes</h4>
-                                        <p>In order to upgrade node tiers, you must possess a quantity of $ALORA
+                                        <h4>Upgrade Kingdoms</h4>
+                                        <p>In order to upgrade Kingdom tiers, you must possess a quantity of $ALORA
                                             tokens that is equal to or greater than the difference in the tiers
                                             price.</p>
                                         <ul className="">
-                                            <li>Bronze to Silver nodes - Costs 5 Bronze nodes</li>
-                                            <li>Bronze to Gold nodes - Costs 10 Bronze nodes</li>
-                                            <li className="me-0">Silver to Gold nodes - Costs 2 Silver nodes</li>
+                                            <li>Bronze to Silver Kingdoms - Costs 5 Bronze Kingdoms</li>
+                                            <li>Bronze to Gold Kingdoms - Costs 10 Bronze Kingdoms</li>
+                                            <li className="me-0">Silver to Gold Kingdoms - Costs 2 Silver Kingdoms</li>
                                         </ul>
                                         <Row>
                                             <Col lg="4">
